@@ -1,4 +1,9 @@
-        Linux kernel release 3.x <http://kernel.org/>
+NOTE: in android building the compiler may say something like
+
+out/target/product/j4corelte/obj/KERNEL_OBJ/usr/include/sound/asound.h: error: field has incomplete type 'struct timespec',
+to fix that add #include <time.h> to out/target/product/j4corelte/obj/KERNEL_OBJ/usr/include/sound/asound.h (I HAVE NO IDEA WHY THIS HAPPENS)
+
+Linux kernel release 3.x <http://kernel.org/>
 
 These are the release notes for Linux version 3.  Read them carefully,
 as they tell you what this is all about, explain how to install the
